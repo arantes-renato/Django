@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}Lista de Tarefa{% endblock %}
+
+{% block content %}
+<div class="offset-1 col-10 list-div">
+    <h1>Lista de Tarefas</h1>
+    <div class="col-2 add-div">
+        <i class="fas fa-plus"></i> Adicionar tarefa
+    </div>
+    <div class="col-9 search-div">
+        <form method="GET" id="search-form">
+            <input class="form-control" type="text" id="search" name="search" placeholder="Digite o nome da tarefa para buscar..." value="{{ request.GET.search }}">
+            <i class="fas fa-search" id="search-btn"></i>
+        </form>
+    </div>
+    <ul class="task-list">
+        <li class="task-item">
+            <span>Titulo da tarefa</span>
+            <span><i class="fas fa-trash"></i></span>
+            <span><i class="fas fa-edit"></i></span>
+        </li>
+        <li class="task-item">
+            <span>Titulo da tarefa</span>
+            <span><i class="fas fa-trash"></i></span>
+            <span><i class="fas fa-edit"></i></span>
+        </li>
+        <li class="task-item">
+            <span>Titulo da tarefa</span>
+            <span><i class="fas fa-trash"></i></span>
+            <span><i class="fas fa-edit"></i></span>
+        </li>
+        <li class="task-item">
+            <span>Titulo da tarefa</span>
+            <span><i class="fas fa-trash"></i></span>
+            <span><i class="fas fa-edit"></i></span>
+        </li><li class="task-item">
+            <span>Titulo da tarefa</span>
+            <span><i class="fas fa-trash"></i></span>
+            <span><i class="fas fa-edit"></i></span>
+        </li>
+    </ul>
+</div>
+{% endblock %}
