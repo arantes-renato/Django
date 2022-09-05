@@ -32,5 +32,13 @@
         </li>
         {% endfor %}
     </ul>
+    <div class="pagination">
+        <span class="step-links">
+            {% if tasks.has_previous %}
+                <a href="?page={{tasks.previous_page"></a>
+            {% endif %}
+        </span>
+
+    </div>
 </div>
 {% endblock %}
