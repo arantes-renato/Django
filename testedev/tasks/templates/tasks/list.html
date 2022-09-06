@@ -37,7 +37,7 @@
             {% if tasks.has_previous %}
                 <a href="?page={{tasks.previous_page_number }}"><i class="fas fa-arrow-left"></i></a>
             {% endif %}
-            
+            {% if tasks.paginator.num_pages %}
             <span class="current">
                 {% if tasks.paginator.num_pages == 1 %}
                     Página {{ tasks.number }}
@@ -46,6 +46,7 @@
                     Mostrando página {{ tasks.number }} de {{ tasks.paginator.num_pages }}
                 {% endif %}
             </span>
+            {% endif %}
 
             {% if tasks.has_next %}
                 <a href="?page={{tasks.next_page_number }}"><i class="fas fa-arrow-right"></i></a>
