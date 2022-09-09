@@ -5,7 +5,7 @@
 /* Navbar */
 
 .navbar {
-    border-bottom: 1px solid green ;
+    border-bottom: 1px solid yellow ;
     margin-bottom: 20px;
 }
 
@@ -129,3 +129,10 @@ ul.messages li {
     margin-left: 5px;
     margin-right: 5px;
 }
+
+/* Login */
+
+.auth-card {
+    margin-bottom: 30px;
+}
+
