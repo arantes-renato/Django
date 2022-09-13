@@ -77,7 +77,11 @@
     border-bottom: 1px dashed rgb(210, 120, 0);
 }
 
-.fas.fa-trash, .fas.fa-edit {
+.task-item.done {
+    background-color: orange;
+}
+
+.fas.fa-trash, .fas.fa-edit, .fas.fa-check {
     cursor: pointer;
     margin: 5px;
     font-size: 20px;
@@ -88,8 +92,16 @@
     color: red;
 }
 
-.fas.fas.fa-edit {
+.fas.fa-edit {
     color: green;
+}
+
+.fas.fa-check {
+    color: gray;
+}
+
+.done .fas.fa-check {
+    color: black;
 }
 
 /* Rodapé */
